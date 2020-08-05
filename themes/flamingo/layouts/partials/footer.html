@@ -1,0 +1,18 @@
+<footer>
+	<div class="bottom-nav">
+		<nav>
+			<ul>
+				<li><a href="/about/">about</a></li>
+				<li><a href="/logs/">logs</a></li>
+				<li><a href="/privacy/">privacy</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	{{ if eq .IsPage true }}
+		{{ if (or (eq .Section "posts") (eq .Section "logs")) }}
+			{{ partial "comments.html" }}
+		{{ end }}
+	{{ end }}
+	<!-- <p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p> -->
+</footer>

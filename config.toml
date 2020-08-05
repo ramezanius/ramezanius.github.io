@@ -1,0 +1,50 @@
+baseURL = "https://ramezanius.me/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+pygmentsCodefences = true
+pygmentsStyle = "colorful"
+
+paginate = 20
+
+title = "Sadegh Ramezani"
+theme = "flamingo"
+[markup.goldmark.renderer]
+unsafe = true
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+publishDir = "docs"
+
+[params]
+  author = "Sadegh Ramezani"
+  description = "Thoughts, obsessions, and mostly rants 😜"
+  sitename = "Sadegh Ramezani"
+  github = "https://github.com/ramezanius"
+  twitter = "@ramezanius"
+  favicon = "/images/favicon.ico"
+  resume = "https://stackoverflow.com/cv/ramezanius"
+
+# Projects list
+[[params.projects]]
+  name = "crypex"
+  demoLink = "https://ramezanius.me"
+  sourceLink = "https://github.com/ramezanius/crypex"
+  description = "Crypex is a fast and easy to use Go API for interfacing with crypto currency exchanges."
+
+
+[[params.projects]]
+  name = "octoql"
+  demoLink = "https://ramezanius.me/octoql"
+  sourceLink = "https://github.com/ramezanius/octoql"
+  description = "OctoQL is a boilerplate code (template) for scalable, production-ready GraphQL servers."
+
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1

@@ -1,0 +1,4 @@
+name = "Flamingo"
+license = "MIT"
+features = ["blog"]
+min_version = "0.01"
